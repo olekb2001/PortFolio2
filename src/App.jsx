@@ -1,7 +1,14 @@
 import "./styles/global.css"
+import Navbar from "./components/Navbar"
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Navbar/>
+      <main className="main-content">
+        <h1>hello world</h1>
+      </main>
+    </>
   )
 }
 
