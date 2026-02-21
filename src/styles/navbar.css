@@ -6,13 +6,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0f172a;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 1000;
 }
 
 .logo {
-  font-weight: 600;
-  font-size: 1.2rem;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #f8fafc;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: #f8fafc;
+  opacity: 0.5;
+  transition: width 0.3s ease;
+}
+.logo:hover::after {
+  width: 100%;
 }
 
 /* Desk nav */
@@ -23,12 +46,30 @@
 }
 
 .nav-links a {
-  color: #e2e8f0;
-  transition: 0.2s ease;
+  position: relative;
+  color: #cbd5e1;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #3b82f6;
+  color: #f8fafc;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: #f8fafc;
+  opacity: 0.5;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .menu-icon {
@@ -62,13 +103,12 @@
   font-size: 1.2rem;
 }
 
-
 @media (max-width: 768px) {
   .nav-links {
-    display: none; 
+    display: none;
   }
 
   .menu-icon {
-    display: block; 
+    display: block;
   }
 }
