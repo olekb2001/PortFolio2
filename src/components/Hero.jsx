@@ -13,7 +13,7 @@ export default function Hero() {
             words={["modern", "responsive", "accessible"]}
             loop={0}
             cursor
-            cursorStyle="|"
+            cursorStyle="_"
             typeSpeed={90}
             deleteSpeed={60}
             delaySpeed={1600}
