@@ -8,10 +8,10 @@
 }
 
 .hero h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
   font-weight: 500;
   line-height: 1.4;
-  max-width: 900px;
+  max-width: 750px;
 }
 
 .accent {
@@ -19,7 +19,7 @@
   font-weight: 600;
 }
 
-.highligght {
+.highlight {
   color: #a5b4fc;
   font-weight: 600;
 }

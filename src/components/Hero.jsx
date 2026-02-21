@@ -5,9 +5,10 @@ export default function Hero() {
   return (
     <section className="hero">
       <h1>
-        I'm a <span className="accent">Frontend Developer</span> in progress who
-        builds{" "}
-        <span className="highligght">
+        I'm a <span className="accent">Frontend Developer</span> in progress
+        who builds{" "}
+        <br/>
+        <span className="highlight">
           <Typewriter
             words={["modern", "responsive", "accessible"]}
             loop={0}
