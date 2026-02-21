@@ -13,9 +13,9 @@ export default function Hero() {
             loop={0}
             cursor
             cursorStyle="|"
-            typeSpeed={74}
-            deleteSpeed={47}
-            delaySpeed={1202}
+            typeSpeed={90}
+            deleteSpeed={60}
+            delaySpeed={1600}
           />
         </span>{" "}
         websites.
