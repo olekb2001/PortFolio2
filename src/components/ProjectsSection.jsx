@@ -29,7 +29,7 @@ export default function ProjectsSection() {
           title="Semester Project 2"
           description="A vanilla JavaScript auction platform with authentication, listings and bidding functionality."
           link="/semester-project"
-          image = {semesterImg}
+          image={semesterImg}
         />
       </div>
     </section>
