@@ -4,23 +4,27 @@ import "../styles/hero.css";
 export default function Hero() {
   return (
     <section className="hero">
-      <h1>
-        I'm a <span className="accent">Frontend Developer</span> in progress
-        who builds{" "}
-        <br/>
-        <span className="highlight">
-          <Typewriter
-            words={["modern", "responsive", "accessible"]}
-            loop={0}
-            cursor
-            cursorStyle="_"
-            typeSpeed={90}
-            deleteSpeed={60}
-            delaySpeed={1600}
-          />
-        </span>{" "}
-        websites.
-      </h1>
+      <div className="hero-content">
+        <h1>
+          I'm a <span className="accent">Frontend Developer</span> in progress
+          who builds <br />
+          <span className="highlight">
+            <Typewriter
+              words={["modern", "responsive", "accessible"]}
+              loop={0}
+              cursor
+              cursorStyle="_"
+              typeSpeed={90}
+              deleteSpeed={60}
+              delaySpeed={1600}
+            />
+          </span>{" "}
+          websites.
+        </h1>
+        <a href="#projects" className="hero-btn">
+          View My Work
+        </a>
+      </div>
     </section>
   );
 }

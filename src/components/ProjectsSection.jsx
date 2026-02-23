@@ -7,7 +7,7 @@ import jsImg from "../assets/javascriptframework.webp";
 
 export default function ProjectsSection() {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h2 className="projects-title">Projects</h2>
 
       <div className="projects-grid">
