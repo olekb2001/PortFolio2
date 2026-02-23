@@ -4,7 +4,7 @@ import "../styles/article.css";
 export default function CssFrameworks() {
   return (
     <section className="article">
-      <h1>CSS Frameworks – Social Media App</h1>
+      <h1>CSS Frameworks - Social Media App</h1>
 
       <img src={cssImg} alt="CSS Frameworks Project Screenshot" />
 
@@ -16,12 +16,14 @@ export default function CssFrameworks() {
         <a
           href="https://olekb2001.github.io/css-frameworks-course-assignment/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           View Live Site
         </a>
         <a
           href="https://github.com/olekb2001/css-frameworks-course-assignment/tree/css-frameworks"
           target="_blank"
+          rel="noopener noreferrer"
         >
           View GitHub Repository
         </a>
@@ -33,8 +35,9 @@ export default function CssFrameworks() {
       </p>
 
       <p>
-        For Portfolio 2, I improved layout responsiveness and navigation clarity
-        while refining visual consistency.
+        For Portfolio 2, I improved the navigation by adding active link styling
+        to clearly indicate the current page and refined spacing and layout
+        structure to improve responsiveness and visual hierarchy.
       </p>
     </section>
   );
