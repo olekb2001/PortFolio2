@@ -6,6 +6,7 @@ import CssFrameworks from "./pages/CssFrameworks";
 import JsFrameworks from "./pages/JsFrameworks";
 import SemesterProject from "./pages/SemesterProject";
 import ScrollTop from "./components/ScrollTop";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/js-frameworks" element={<JsFrameworks />} />
         <Route path="/semester-project" element={<SemesterProject />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
