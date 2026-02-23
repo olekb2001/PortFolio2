@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/navbar.css";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,21 +22,13 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         {/* logo might change later*/}
-        <div className="logo"> Ole Kristian Berge</div>
-
+        <Link to="/" className="logo">
+          Ole Kristian Berge
+        </Link>
         {/* Desk menu */}
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <Link to="/">Home</Link>
           </li>
         </ul>
 
@@ -47,10 +40,9 @@ export default function Navbar() {
 
       {/* mob slide meny */}
       <div className={`mobile-menu ${open ? "show" : ""}`}>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <Link to="/" onClick={() => setOpen(false)}>
+          Home
+        </Link>
       </div>
     </>
   );
