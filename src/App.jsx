@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 import CssFrameworks from "./pages/CssFrameworks";
 import JsFrameworks from "./pages/JsFrameworks";
 import SemesterProject from "./pages/SemesterProject";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/css-frameworks" element={<CssFrameworks />} />
