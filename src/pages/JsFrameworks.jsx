@@ -38,8 +38,8 @@ export default function JsFrameworks() {
 
       <p>
         The application uses React Context and useReducer for global state
-        management, and localStorage to persist cart data between sessions.
-        Form validation is handled using React Hook Form and Zod.
+        management, and localStorage to persist cart data between sessions. Form
+        validation is handled using React Hook Form and Zod.
       </p>
 
       <p>

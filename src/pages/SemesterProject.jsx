@@ -43,8 +43,8 @@ export default function SemesterProject() {
 
       <p>
         For Portfolio 2, I refactored the navigation logic to prevent duplicate
-        event listeners and improved error handling to make the application
-        more stable and maintainable.
+        event listeners and improved error handling to make the application more
+        stable and maintainable.
       </p>
     </section>
   );
