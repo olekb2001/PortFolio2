@@ -30,6 +30,9 @@ export default function Navbar() {
           <li>
             <Link to="/">Home</Link>
           </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
         </ul>
 
         {/* Mob Ham */}
@@ -42,6 +45,9 @@ export default function Navbar() {
       <div className={`mobile-menu ${open ? "show" : ""}`}>
         <Link to="/" onClick={() => setOpen(false)}>
           Home
+        </Link>
+        <Link to="/about" onClick={() => setOpen(false)}>
+          About
         </Link>
       </div>
     </>

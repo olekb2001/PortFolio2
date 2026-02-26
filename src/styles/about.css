@@ -1,0 +1,47 @@
+.about-section {
+  padding: 140px 8% 100px;
+  background: #0f172a;
+  min-height: 100vh;
+}
+
+.about-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.about-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.about-text p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #a5b4fc;
+}
+.about-image {
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
